@@ -1,7 +1,5 @@
 services: 
   app: 
-    image: node:20-slim
-    command: tail -f /dev/null
-    working_dir: /home/node/app
+    build: .
     volumes:
       - .:/home/node/app
